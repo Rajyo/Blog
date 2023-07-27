@@ -1,0 +1,107 @@
+.category {
+  margin: 1rem 0px 3rem 0rem !important;
+  position: relative;
+  padding-top: 20px;
+}
+
+.content{
+  background-color: white !important;
+}
+
+.category .box {
+  border-radius: 0;
+  text-align: center;
+  margin: 0rem 1rem;
+  background-color: rgb(148, 107, 125);
+}
+
+.category .box:hover{
+  margin: 0rem 3rem;
+}
+
+.category p {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 600;
+}
+.category img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  /* mix-blend-mode:multiply !important; */
+}
+
+.category .box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.category .box {
+  position: relative;
+}
+
+.category .boxs {
+  position: relative;
+}
+
+.category .overlay {
+  position: absolute;
+  top: 0px;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0;
+}
+
+.category .overlay:hover{
+  opacity: 1;
+}
+
+.category .overlay h3{
+  font-weight: 600;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  padding-top: 5rem;
+}
+
+.date label{
+  font-size: 0.9rem !important;
+}
+
+/*---------------control-btn-------------*/
+.control-btn button {
+  background: rgb(123, 199, 123);
+  width: 30px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  padding: 2px;
+}
+
+.control-btn .next {
+  position: absolute;
+  top: 40%;
+  right: 10px;
+}
+
+.control-btn .prev {
+  position: absolute;
+  top: 40%;
+  left: 10px;
+  z-index: 99;
+}
+.control-btn .icon {
+  font-size: 25px;
+}
+/*---------------control-btn-------------*/

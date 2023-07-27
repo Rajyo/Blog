@@ -1,0 +1,42 @@
+.accountInfo {
+  margin: 0rem 0 8rem 0;
+  padding-top: 1rem;
+}
+.accountInfo .left {
+  width: 20rem;
+  position: relative;
+  /* background-color:aquamarine; */
+}
+.accountInfo .right {
+  width: 30rem;
+  margin-left: 1rem;
+  background-color: white;
+}
+
+.accountInfo .image img {
+  position: absolute;
+  top: 2rem;
+  left: 2.8rem;
+  width: 250px !important;
+  height: 250px !important;
+  z-index: 1;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  object-fit: contain;
+}
+
+.accountInfo .right label {
+  font-size: 17px;
+  color: #000;
+  display: block;
+}
+
+.accountInfo .right textarea{
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.button:hover{
+  background-color: green;
+}

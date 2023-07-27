@@ -1,0 +1,17 @@
+label{
+    color: black !important;
+    font-size: medium !important;
+    padding: 2px;
+    cursor:text !important;
+}
+
+.submit_form{
+    background-color: black;
+    color: white;
+    font-size: medium;
+    margin-top: 1rem;
+}
+
+.image_form{
+    padding-top: 10px;
+}

@@ -1,0 +1,19 @@
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+.center_banner{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    font-size: 7.5rem;
+}
+
+.banner{
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}

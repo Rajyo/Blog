@@ -1,0 +1,52 @@
+label{
+    color: black !important;
+    font-size: medium !important;
+    padding: 2px;
+    cursor:text !important;
+}
+
+.image_form{
+    padding-top: 10px;
+}
+
+  .left .img img {
+    position: absolute;
+    top: 3rem;
+    left: 2.8rem;
+    width: 500px !important;
+    height: 350px !important;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    object-fit: contain;
+  }
+  
+  .submit_form{
+    background-color: blue;
+    color: white;
+    width: 8rem;
+}
+
+  .delete{
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .delete h4{
+    padding: 0.5rem 1rem;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+
+  .delete:hover{
+    background-color: black !important;
+    color: red !important;
+  }
+
+  .cover:hover{
+    background-color: lightblue !important;
+    color: black !important;
+  }
+
+.submit_form:hover{
+    background-color: green !important;
+  }
