@@ -5,6 +5,7 @@ import { RiImageAddLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import axiosInstance from "../../axios";
 import { AiOutlineSolution } from "react-icons/ai";
+import logo from "../../assets/images/user-icon.png";
 // import { useNavigate } from "react-router-dom";
 
 const User = () => {
@@ -41,7 +42,7 @@ const User = () => {
                 setProfileOpen(!profileOpen);
               }}
             >
-              <img
+              {/* <img
                 src={profile.profile.avatar}
                 alt=""
                 style={{
@@ -50,7 +51,38 @@ const User = () => {
                   marginTop: "0.3rem",
                   marginRight: "0.5rem",
                 }}
-              />
+              /> */}
+              { profile.profile.avatar == null ? 
+            <img
+              src={logo}
+              alt=""
+              onClick={() => {
+                setProfileOpen(!profileOpen);
+              }}
+              style={{
+                top: "-1.5rem",
+                right: "-1rem",
+                width: "3rem",
+                height: "3rem",
+                marginBottom:"-0.3rem",
+                marginTop:"0.1rem"
+              }}
+            />  :
+            <img
+              src={profile.profile.avatar}
+              alt=""
+              onClick={() => {
+                setProfileOpen(!profileOpen);
+              }}
+              style={{
+                top: "-1.5rem",
+                right: "-1rem",
+                width: "3rem",
+                height: "3rem",
+                marginBottom:"-0.3rem",
+                marginTop:"0.1rem"
+              }}
+          /> }
             </button>
             {profileOpen && (
               <div
@@ -62,7 +94,7 @@ const User = () => {
                 <Link to="/account" state={{ profile: profile }}>
                   <div className="image" >
                     <div className="img" style={{marginTop:"0.25rem", marginLeft:"-0.35rem"}}>
-                      <img src={profile.profile.avatar} alt="" />
+                      {profile.profile.avatar == null ? <img src={logo} alt="" /> : <img src={profile.profile.avatar} alt="" />}
                     </div>
                     <div className="text" style={{marginLeft:"-0.35rem"}}>
                       <h4 style={{ textTransform: "capitalize", fontSize:"1rem" }}>

@@ -16,7 +16,7 @@ export const Header = () => {
   token ? (padding = "0.5rem") : (padding = "1.4rem");
 
   var margleft = 0;
-  token ? (margleft = "3.8rem") : (margleft = "8rem");
+  token ? (margleft = "0.5rem") : (margleft = "5.5rem");
 
   return (
     <>

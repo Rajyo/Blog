@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import "./account.css";
 import { useLocation } from "react-router";
 import axios from "axios";
+import logo from "../../assets/images/user-icon.png";
 
 const Account = () => {
   const location = useLocation();
@@ -58,11 +59,17 @@ const Account = () => {
           <div className="content" style={{display:"flex", justifyContent:"center"}}>
             <div className="left">
               <div className="image">
-                <img
+                {
+                  avatar == null ? <img
+                  src={logo}
+                  alt="image1"
+                  class="image-preview"
+                /> : <img
                   src={avatar}
                   alt="image1"
                   class="image-preview"
                 />
+                }
                 <button
                   className="cover"
                   style={{

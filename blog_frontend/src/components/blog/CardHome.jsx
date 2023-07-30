@@ -65,8 +65,8 @@ export const CardHome = () => {
                     <h4 style={{ marginTop: "-0.15rem", marginLeft: "-0.25rem" }}>{item.category.category}</h4>
                   </Link>
                 </div>
-                <h3 style={{ marginTop: "-0.35rem" }}>{item.title}</h3>
-                <p className="footer_card" style={{ fontSize: "0.9rem", marginTop: "0.25rem", color:"#302a2a" }}>{item.desc.slice(0, 70)}...</p>
+                <h3 style={{ marginTop: "-0.85rem" }}>{item.title}</h3>
+                <p className="footer_card" style={{ fontSize: "0.9rem", marginTop: "0rem", color:"#302a2a" }}>{item.desc.slice(0, 60)}...</p>
               </div>
               <div className="date" style={{ display: "flex"}}>
                 <AiOutlineCalendar className="icon" style={{ marginLeft: "0.25rem" }} />{" "}

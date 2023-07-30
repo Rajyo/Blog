@@ -69,7 +69,7 @@ const RecommendBlog = ({ cat }) => {
                   <div className="details">
                     <h4 style={{ marginTop: "-0.25rem" }}>{item.title}</h4>
 
-                    <p style={{ fontSize: "0.9rem", marginTop: "0.1rem" , color:"#302a2a" }}>{item.desc.slice(0, 30)}...</p>
+                    <p style={{ fontSize: "0.9rem", marginTop: "0.1rem" , color:"#302a2a" }}>{item.desc.slice(0, 35)}...</p>
 
                     <div className="date" style={{marginBottom:"-0.25rem"}}>
                       <AiOutlineCalendar size="1rem" className="icon" />
