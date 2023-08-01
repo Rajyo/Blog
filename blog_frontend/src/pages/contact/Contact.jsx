@@ -39,10 +39,10 @@ const Contact = () => {
       };
 
       await emailjs.send(
-        "service_bbl1zmb",
-        "template_bzvjiti",
+        "process.env.REACT_APP_SERVICE",
+        "process.env.REACT_APP_TEMPLATE",
         templateParams,
-        "xZl_ZqbwNUP77_Hmc"
+        "process.env.REACT_APP_KEY"
       );
 
       reset();
